@@ -1,0 +1,35 @@
+## Jasmine
+
+#### 介绍
+* Jasmine是面向行为驱动开发(BDD Behavior Driven Development)的JavaScript单元测试框架。
+* 与TDD 测试驱动开发，它更趋向于需求。
+* 不依赖其他框架，可运行在浏览器与 node.js 环境
+* 目前版本2.8.0 
+* **官网**：https://github.com/jasmine/jasmine 
+* **文档**：https://jasmine.github.io/ 
+* **官网入门**：https://jasmine.github.io/edge/introduction.html
+* 其他：http://www.cnblogs.com/zhcncn/p/4330112.html 
+
+
+#### 本地安装
+* 不同于其他 npm 包，你可以使用链接下载 jasmine 包，然后就可以使用了
+* 下载页面：https://github.com/jasmine/jasmine/releases
+* 下载后之后，当前包内就包含了所有 jasmine 的库文件，以及一个小型的例子
+
+#### Node 安装
+* npm i jasmine --save-dev
+* npm i jasmine -g
+
+#### 使用
+* jasmine init - 初使化项目（并生成一个 json conf 文件）
+* jasmine examples - 初使化项目（生成 json conf，并生成 example文件）
+* ------
+* jasmine 运行 jasmine 测试
+* jasmine spec/appSpec.js 运行某个 测试
+
+#### 案例
+* JasmineTest-1 Node 实例
+* JasmineTest-2 Html 实例
+
+
+
