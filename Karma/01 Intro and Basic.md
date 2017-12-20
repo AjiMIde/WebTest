@@ -18,4 +18,7 @@ npm i karma-cli -g
 npm i karma-jasmine karma-chrome-launcher --save-dev
 ```
 
-#### 
+#### 运行
+```shell
+karma start
+```
