@@ -9,9 +9,9 @@
 ```shell
 * npm install --save-dev mochawesome
 * npm install -g mochawesome
-* maocha test.js -R mochawsome
 ```
 
-
-
-
+#### 使用
+```shell
+* maocha test.js -R mochawsome
+```

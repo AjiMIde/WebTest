@@ -25,7 +25,6 @@ describe("Player Suite", function() {
     expect(player.pushNext()).not.toEqual(false);
   })
 
-
   describe("when song has been paused", function() {
     beforeEach(function() {
       player.play(song);
@@ -67,3 +66,5 @@ describe("Player Suite", function() {
     });
   });
 });
+
+
