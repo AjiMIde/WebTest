@@ -70,7 +70,7 @@ describe('测试套件：异步测试 timeout & asyn', () => {
   })
 
   it('Case3: this.timeout() 下面异步获取一个大数据，mocha 默认超时时间 2000ms，使用 this.timeout 解除这个限制. ', function (done) {
-    // this.timeout(5000)
+    this.timeout(5000)
     var orderList3 = []
     fzsOrder.getAsynBigData(function (res) {
       orderList3 = res.data

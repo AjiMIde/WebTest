@@ -22,13 +22,11 @@ FzsOrder.prototype.getHttpResult = function () {
   return {success: true, data: []}
 }
 
-FzsOrder.prototype.result = []
-FzsOrder.prototype.asyning = false
-FzsOrder.prototype.asynHttpResult = function () {
-  FzsOrder.prototype.asyning = true
-  var me = this
+FzsOrder.prototype.asynHttpResult = function (callback) {
   setTimeout(function () {
-    me.asyning = false    // 表示异步成功
-    me.result = [{index: 0, value: 'Goods 1'}, {index: 1, value: 'Goods 2'}]
+    var res = {}
+    res.success = true
+    res.data = [{index: 0, value: 'Goods 1'}, {index: 1, value: 'Goods 2'}]
+    callback(res)
   }, 3000)
 }
