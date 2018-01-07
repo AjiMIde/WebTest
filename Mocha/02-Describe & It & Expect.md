@@ -1,7 +1,25 @@
-## expect 断言 chai 断言库
+#### describe & it 测试套件 与 测试用例
 > 查看 Test/03-Concept.md 认识概念
 
-#### 代码实现
+**代码实现**
+```javascript
+// 测试套件(test suite)
+describe('test suite title', () => {
+
+  // 测试用例 (test case)，测试的最小单位
+  it('test case title', function () {
+    
+    // 断言库，这里用到的是 chai
+    expect('').to.be.equal('')
+  })
+})
+```
+
+
+#### Expect 断言。断言有多个可选库，本案例采用 chai
+> 查看 Test/03-Concept.md 认识概念
+
+**代码实现**
 ```javascript
 describe('', () => {
 
@@ -35,9 +53,11 @@ describe('', () => {
     
     // match
     expect('foobar').to.match(/^foo/)
-    
   })
   
 })
 ```
+
+
+
 

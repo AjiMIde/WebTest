@@ -1,16 +1,20 @@
-const fzsArray = require('./fzsArray.js')
+const fzsArray = require('../src/fzsArray.js')
 const expect = require('chai').expect
 
 // 测试套件(test suite)
-describe('fzsArray 测试', () => {
-
+describe('套件：基本的 equal 断言测试', () => {
   // 测试用例 (test case)，测试的最小单位
-  it('让 [1, 2, 3, 4] to string', function () {
+  it('Case 1 "to be equal" : 1 + 1 === 2', function () {
+    // 断言库，这里用到的是 chai
+    expect(1 + 1).to.be.equal(2)
+  })
+
+  it('用例1--让 [1, 2, 3, 4] to string', function () {
     // 断言库，这里用到的是 chai
     expect(fzsArray.aryToString([1, 2, 3, 4])).to.be.equal('1,2,3,4')
   })
 
-  it('让 [1, 2, 3, {a: aa, b: bb}] to string', function () {
+  it('用例2--让 [1, 2, 3, {a: aa, b: bb}] to string', function () {
     expect(fzsArray.aryToString([1, 2, 3, {a: 'a', b: 'b'}])).to.be.equal('1,2,3,{"a":"a","b":"b"}')
   })
 

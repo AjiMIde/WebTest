@@ -10,9 +10,11 @@
 * 可选的正则检测
 * 支持使用配置文件
 * 支持使用任何断言库
+* 支持异步的单元测试
 * --
 * 阮一峰：http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html
 * cnblog: https://www.cnblogs.com/Leo_wl/p/5734889.html
+* cnblog: http://www.cnblogs.com/tzyy/p/5729602.html
 * 官网：http://mochajs.org/
 
 #### 安装
@@ -31,7 +33,7 @@
 > 运行多个测试
 
 * mocha
-> 运行这个目录下的test
+> 运行这个目录下的test目录
 
 * mocha test/{a, b}.js
 * mocha test/unit/*.js
@@ -65,5 +67,10 @@
 * mocha -R markdown > markdown.md
 * mocha -R doc > html.html
 > 将测试文件 生成 规格 文件，即，将测试代码生成 markdown/html 等其他可视性强的文件
+```
+
+#### 初使化一个 浏览器测试实例
+```shell
+* mocha init example-name
 ```
 
