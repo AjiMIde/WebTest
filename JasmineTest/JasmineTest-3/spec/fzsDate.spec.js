@@ -7,8 +7,8 @@ describe("FzsDate Suite: xit/xdescribe/pending", function() {
     fzsDate = new FzsDate();
   });
 
-  it("匹配今天的日期 2018-01-07", function() {
-    expect(fzsDate.get('yyyy-MM-dd')).toEqual('2018-01-07')
+  it("匹配今天的日期 2018-01-08", function() {
+    expect(fzsDate.get('yyyy-MM-dd')).toEqual('2018-01-08')
   });
 
   xit("匹配今天的日期,时间 2018-01-04 12:00, 挂起", function() {

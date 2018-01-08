@@ -1,5 +1,5 @@
 // Karma configuration
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     // frameworks:     frameworks to use: available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     // reporters:      test results reporter to use
@@ -13,7 +13,7 @@ module.exports = function(config) {
     // files:       list of files / patterns to load in the browser
     // exclude:     list of files to exclude
     basePath: '../JasmineTest/JasmineTest-1/',
-    files: [ 'src/**/*.js', 'spec/**/*.js'],
+    files: ['src/**/*.js', 'spec/**/*.js'],
     exclude: [],
 
     // port:          web server port
@@ -28,6 +28,21 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'src/**/*.js': ['babel'],
+      'spec/**/*.js': ['babel']
+    },
+
+    babelPreprocessor: {
+      options: {
+        presets: ['es2015'],
+        sourceMap: 'inline'
+      },
+      filename: function (file) {
+        return file.originalPath.replace(/\.js$/, '.es5.js');
+      },
+      sourceFileName: function (file) {
+        return file.originalPath;
+      }
     },
 
     // Continuous Integration mode

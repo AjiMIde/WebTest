@@ -12,7 +12,7 @@ module.exports = function (config) {
     // basePath:    base path that will be used to resolve all patterns (eg. files, exclude)
     // files:       list of files / patterns to load in the browser
     // exclude:     list of files to exclude
-    basePath: '../MochaTest/MochaTest-1',
+    basePath: '../MochaTest/MochaTest-3',
     files: ['**/*.js'],
     exclude: [],
 
