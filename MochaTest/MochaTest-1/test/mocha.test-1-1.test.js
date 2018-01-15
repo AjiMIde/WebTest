@@ -6,12 +6,12 @@ const expect = require('chai').expect
 describe('测试套件：fzsArray 测试', () => {
   var ary = []
   beforeEach(function () {
-    ary = [1, 2, 3, 4]
+    ary = [1, 2, 3, 4, 5]
     aryStr = fzsArray.aryToString(ary)
   })
 
   it('Case1 : to.be.equal 让 [1, 2, 3, 4] to string', function () {
-    expect(fzsArray.aryToString([1, 2, 3, 4])).to.be.equal('1,2,3,4')
+    expect(fzsArray.aryToString([1, 2, 3, 4, 5])).to.be.equal('1,2,3,4')
   })
 
   it('Case2:  to.be.not.equal 数组转化 string，最后不能带上逗号 ,', function () {

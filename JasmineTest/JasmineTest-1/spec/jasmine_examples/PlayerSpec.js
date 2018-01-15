@@ -84,6 +84,7 @@ describe("Player", function() {
     it("should be possible to resume", function() {
       player.resume();
       expect(player.isPlaying).toBeTruthy();
+      // expect(player.isPlaying).toBeFalsy();
       expect(player.currentlyPlayingSong).toEqual(song);
     });
   });

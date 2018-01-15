@@ -20,7 +20,7 @@
 ```shell
 npm i karma --save-dev
 npm i karma -g
-npm i karma-cli -g
+npm i karma-cli -ga
 npm i karma-jasmine karma-chrome-launcher --save-dev
 ```
 

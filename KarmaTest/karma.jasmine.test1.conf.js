@@ -1,11 +1,19 @@
 // Karma configuration
+/**
+ * ## 在配置文件里面配置：
+ * * frameworks: ['jasmine', 'browserify'],
+ *
+ *
+ * https://stackoverflow.com/questions/19117092/jasmine-tests-in-karma-uncaught-referenceerror-require-is-not-defined
+ * @param config
+ */
 module.exports = function (config) {
   config.set({
     // frameworks:     frameworks to use: available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     // reporters:      test results reporter to use
     //                 possible values: 'dots', 'progress'(default): available reporters: https://npmjs.org/browse/keyword/karma-reporter
     // logLevel:       level of logging: possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine', 'browserify'],
     reporters: ['kjhtml'],
     logLevel: config.LOG_INFO,
 
@@ -28,8 +36,8 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'src/**/*.js': ['babel'],
-      'spec/**/*.js': ['babel']
+      'src/**/*.js': ['browserify'],
+      'spec/**/*.js': ['browserify']
     },
 
     babelPreprocessor: {
@@ -47,7 +55,10 @@ module.exports = function (config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
+    singleRuadn: false,
+
+    //
+    // plugins: ['karma-browserify'],
 
     // Concurrency level
     // how many browser should be started simultaneous
